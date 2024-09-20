@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webpage</title>
+    <title>SIGN UP</title>
     <style>
         body {
             color:black;
-            background-color: aqua;
+            background-color: rgb(242, 245, 245);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,18 +19,25 @@
             font-size: 24px;
         }
         .container{
-            background-color:aqua
+            background-color:aqua;
+            padding: 10px;
+            
+
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>SIGN UP</h1>
         <label for="Registration number">Registration number:</label>
-    <input type="text" name="Registration number" id="Registration number"/>
+    <input type="text" name="Registration number" id="Registration number" required pattern="[a-zA-Z]" required/>
     <br>
     <br>
     <label for="Password">Password:</label>
-    <input type="text" name="Password" id="Password"/>
+    <input type="text" name="Password" id="Password" minlength="4" maxlength="8" required/>
+    <br>
+    <br>
+    <input type="submit">
     <br>
     <br>
     <a href="">Forgot password</a>
